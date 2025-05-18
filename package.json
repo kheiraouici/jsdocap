@@ -1,0 +1,35 @@
+{
+  "name": "jsdocap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm test && env-cmd -f ./env/.env nodemon ./bin/www",
+    "dev": "env-cmd -f ./env/.env.dev nodemon ./bin/www",
+    "prod": "env-cmd -f ./env/.env.prod nodemon ./bin/www",
+    "doc": "jsdoc -c jsdoc.json",
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "jsdoc": "^4.0.4"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "chai": "^5.2.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.3.0",
+    "mongoose": "^8.15.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.10",
+    "pug": "^3.0.3",
+    "sinon": "^20.0.0"
+  }
+}
