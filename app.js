@@ -15,7 +15,7 @@ mongodb.initClientDbConnection();
 
 var app = express();
 
-app.set('view engine', 'pug');
+app.set('view engine','ejs');
 app.set('views', path.join(__dirname, 'public'));
 
 app.use(cors({

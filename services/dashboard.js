@@ -3,7 +3,7 @@ const { body, validationResult } = require('express-validator');
 const User = require('../models/user');
 const Catway = require('../models/catway');
 const Booking = require('../models/booking');
-const { render } = require('pug');
+const { render } = require('ejs');
 
 /**
  * Affiche le tableau de bord avec les utilisateurs, catways et réservations.
